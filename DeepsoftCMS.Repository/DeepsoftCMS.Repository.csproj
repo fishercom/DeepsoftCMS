@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A018442-4424-43F3-8865-86B4593E9FA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeepsoftCMS.Repository</RootNamespace>
+    <AssemblyName>DeepsoftCMS.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DDDContext\AdmUserRepository.cs" />
+    <Compile Include="DDDContext\ArticleRepository.cs" />
+    <Compile Include="DDDContext\CommentRepository.cs" />
+    <Compile Include="DDDContext\EFCMSRepository.cs" />
+    <Compile Include="DDDContext\SchemaRepository.cs" />
+    <Compile Include="DDDContext\IGenericRepository.cs" />
+    <Compile Include="DDDContext\ICMSRepository.cs" />
+    <Compile Include="DDDContext\AdmProfileRepository.cs" />
+    <Compile Include="DDDContext\PostRepository.cs" />
+    <Compile Include="DDDContext\AdmMenuRepository.cs" />
+    <Compile Include="DDDContext\WebUserRepository.cs" />
+    <Compile Include="Entity\AdmAction.cs" />
+    <Compile Include="Entity\AdmLog.cs" />
+    <Compile Include="Entity\AdmPermission.cs" />
+    <Compile Include="Entity\AdmEvent.cs" />
+    <Compile Include="Entity\AdmModule.cs" />
+    <Compile Include="Entity\AdmUser.cs" />
+    <Compile Include="Entity\CmsArticle.cs" />
+    <Compile Include="Entity\CmsSchema.cs" />
+    <Compile Include="Entity\CmsLang.cs" />
+    <Compile Include="Entity\Comment.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\AdmProfile.cs" />
+    <Compile Include="Entity\Post.cs" />
+    <Compile Include="Entity\AdmMenu.cs" />
+    <Compile Include="Entity\WebUser.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
