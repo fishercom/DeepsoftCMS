@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace DeepsoftCMS
+namespace DeepsoftCMS.Web
 {
     public class FilterConfig
     {

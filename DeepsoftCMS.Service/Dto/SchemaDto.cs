@@ -17,6 +17,7 @@ namespace DeepsoftCMS.Service.Dto
         public bool Active { get; set; }
 
         //public SectionDto Section { get; set; }
-        public TemplateDto Template { get; set; }
+        public string AdminView { get; set; }
+        public string FrontView { get; set; }
     }
 }

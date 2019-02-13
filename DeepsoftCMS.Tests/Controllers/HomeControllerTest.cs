@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DeepsoftCMS;
-using DeepsoftCMS.Controllers;
+using DeepsoftCMS.Web;
+using DeepsoftCMS.Web.Controllers;
 
 namespace DeepsoftCMS.Tests.Controllers
 {

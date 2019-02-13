@@ -59,7 +59,6 @@
     <Compile Include="Dto\AdmMenuDto.cs" />
     <Compile Include="Dto\AdmProfileDto.cs" />
     <Compile Include="Dto\SchemaTemplateDto.cs" />
-    <Compile Include="Dto\TemplateDto.cs" />
     <Compile Include="Dto\PostDto.cs" />
     <Compile Include="Dto\WebUserDto.cs" />
     <Compile Include="Map\MapConfig.cs" />

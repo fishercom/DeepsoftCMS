@@ -5,14 +5,15 @@ namespace DeepsoftCMS.Web.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DeepsoftCMS.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DeepsoftCMS.Web.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "DeepsoftCMS.Web.Models.ApplicationDbContext";
         }
 
-        protected override void Seed(DeepsoftCMS.Models.ApplicationDbContext context)
+        protected override void Seed(DeepsoftCMS.Web.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

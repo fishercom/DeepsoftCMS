@@ -1,8 +1,6 @@
-﻿using Microsoft.Owin;
-using Owin;
+﻿using Owin;
 
-[assembly: OwinStartupAttribute(typeof(DeepsoftCMS.Startup))]
-namespace DeepsoftCMS
+namespace DeepsoftCMS.Web
 {
     public partial class Startup
     {
